@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron">
+	  <h1 class="text-center">The Crystal Collector</h1>
+	  	<h3 class="text-info text-center" id="subHeader">A Guessing Game</h3>
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-10" id="rules">
+			<p id="rulesP">You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score. You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. The value of each cystal is hidden from you until you click on it. Each time the game starts, the value of the crystals will change.</p>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+		</div>
+		<div class="col-md-10 text-center">
+			<h4 class="bigText" id="randomNumber">Your random number is: <span id="numberToGuess"></span></h4>
+		</div>
+		<div class="col-md-1">
+		</div>
+	</div>
+		<div class="row text-center">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+				<h4 id="totalScore">Total Score: <span id="totalNumber"></span></h4>
+			</div>
+			<div class="col-md-2" id="winsLosses">
+				<h4 id="wins">Wins: <span id="winsScore"></span></h4>
+			</div>
+			<div class="col-md-2">
+				<h4 id="losses">Losses: <span id="lossesScore"></span></h4>
+			</div>
+			<div class="col-md-2">
+				<button class="btn btn-info btn-lg" id="resetbtn">Reset</button>
+			</div>
+			
+			<div class="col-md-2">
+			</div>
+		</div>
+		<div class ="row text-center">
+			<div class="col-md-12">
+				<h3 id="pick">Pick a crystal</h3>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-12">
+				<button id="img-responsive"><img src="assets/images/crystal.png" class="img-responsive" id="crystal1" alt="crystal"></button>
+				<button id="img-responsive"><img src="assets/images/crystal.png" class="img-responsive" id="crystal2" alt="crystal"></button><button id="img-responsive"><img src="assets/images/crystal.png" class="img-responsive" id="crystal3" alt="crystal"></button><button id="img-responsive"><img src="assets/images/crystal.png" class="img-responsive" id="crystal4" alt="crystal"></button>
+			</div>
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
